@@ -78,6 +78,43 @@ export interface JobInsights {
   generated_at: string;
 }
 
+export interface ConversationMessage {
+  role: "user" | "assistant";
+  content: string;
+  timestamp: string;
+}
+
+export interface Anecdote {
+  id: string;
+  user_id: string;
+  company: string;
+  job_title: string;
+  date_range: string;
+  situation_bullets: string[];
+  task_bullets: string[];
+  action_bullets: string[];
+  result_bullets: string[];
+  long_term_implications: string;
+  skill_tags: string[];
+  status: "in_process" | "approved";
+  conversation_history: ConversationMessage[];
+  created_at: string;
+  updated_at: string;
+}
+
+export interface NetworkContact {
+  id: string;
+  user_id: string;
+  name: string;
+  email: string;
+  phone: string;
+  company: string;
+  connection_source: string;
+  last_interaction: string | null;
+  discussion_notes: string;
+  created_at: string;
+}
+
 export interface Application {
   id: string;
   user_id: string;

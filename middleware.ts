@@ -2,7 +2,7 @@ import { createServerClient } from "@supabase/auth-helpers-nextjs";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const protectedRoutes = ["/dashboard", "/kit", "/autoapply", "/tracker", "/profile", "/onboarding"];
+const protectedRoutes = ["/dashboard", "/kit", "/autoapply", "/tracker", "/profile", "/onboarding", "/anecdotes", "/network"];
 
 export async function middleware(req: NextRequest) {
   let response = NextResponse.next({ request: req });

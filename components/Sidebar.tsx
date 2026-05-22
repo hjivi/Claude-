@@ -8,6 +8,8 @@ import { useRouter } from "next/navigation";
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: "▦" },
   { href: "/tracker", label: "Tracker", icon: "◎" },
+  { href: "/anecdotes", label: "Anecdotes", icon: "◆" },
+  { href: "/network", label: "Network", icon: "⬡" },
   { href: "/profile", label: "Profile", icon: "◈" },
 ];
 
